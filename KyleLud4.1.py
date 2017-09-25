@@ -19,5 +19,3 @@ while stop != 1:
         print ("The calories burned in ", minutes, "minutes are: ",   round(calories,2) * minutes)
         stop = 1 # stopping the program at 30 so it doesnt run infinitely
 
-
-print(4.2 * 10)
