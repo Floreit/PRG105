@@ -24,7 +24,7 @@ while yearsCount < years:
             yearsCount = yearsCount + 1
             print(" End of Year ")
         elif yearsCount == years:
-            print("you fucked up you idiot") #harsh reminder and error handling
+            print("you messed up") #harsh reminder and error handling
 
 N = yearsCount * 12
 average = totalRainYears / N
