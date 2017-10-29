@@ -1,0 +1,41 @@
+def main():
+    count = 0
+    total = 0
+
+    # Setting numbers to the file and opening the file in read mode
+    # try statement for seeing if the file is opened
+    
+    """ You don't need a try-except statement around the file at this point. """
+    #try:
+    numbers = open('numbers.txt', 'r')
+    #except OSError:
+        #print("file not found")
+
+    # For loop to add up and count the numbers inside numbers file, adds all values into one value
+    # try statement to check for number exception
+    try:
+        for line in numbers:
+            amount = float(line)
+            total += amount
+            count = count + 1
+        # getting the average of all the numbers in the file
+        average = total / count
+        
+    """ These lines need to be here inside the try statement, we don't want them running 
+    if there aren't any numbers to work with. """
+    
+    # print the total amount of numbers and the average of the numbers
+        print("There were a total of: ", count, " numbers", sep="")
+        print("The average of the numbers was: ", format(average, ',.2f'), sep="")
+        numbers.close()
+
+    except ValueError:
+        print("There are no numbers here")
+        
+    """ You were supposed to have it check for an IOError (In-Out Error) not an OSError (Operating System Error). """
+
+
+# Calling main function
+
+
+main()
