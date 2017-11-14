@@ -1,3 +1,4 @@
+# class for questions
 class Questions:
     question = " "
     answer1 = " "
@@ -5,7 +6,7 @@ class Questions:
     answer3 = " "
     answer4 = " "
     correct_answer = " "
-
+#initializer
     def __init__(self):
         question = " "
         answer1 = " "
@@ -13,7 +14,7 @@ class Questions:
         answer3 = " "
         answer4 = " "
         correct_answer = " "
-
+#all the functions to make the question for the trivia to be used later on
     def set_question(self, question):
         self.question = question
 
@@ -31,7 +32,7 @@ class Questions:
 
     def set_correct_answer(self, i):
         self.correct_answer = i
-
+# Get question information to display them
     def get_question(self):
         return self.question
 
@@ -50,7 +51,7 @@ class Questions:
     def get_correct_answer(self):
         return self.correct_answer
 
-
+# quickly declaring all the variables
 q1 = Questions()
 q2 = Questions()
 q3 = Questions()
@@ -61,7 +62,8 @@ q7 = Questions()
 q8 = Questions()
 q9 = Questions()
 q10 = Questions()
-
+# Question 1 to 10 down bellow
+# -------------------------------------
 q1.set_question("Who was the first president of the united states of america")
 q1.set_answer1("Cleopatra")
 q1.set_answer2("Will")
@@ -131,13 +133,14 @@ q10.set_answer2("TSM")
 q10.set_answer3("SSG")
 q10.set_answer4("SKT")
 q10.set_correct_answer("SSG")
-
+# ------------------------------------------
+# storing 5 questions into a list for each player
 questions1 = [q1, q2, q3, q4, q5]
 questions2 = [q6, q7, q8, q9, q10]
-
+# declaring players and giving them a score of 0
 player1 = 0
 player2 = 0
-
+# player 1 for loop to ask for all the questions
 print("Player 1 turn")
 for query in questions1:
     print("\n")
@@ -151,7 +154,7 @@ for query in questions1:
         print("Correct")
         player1 = player1 + 1
 
-
+# player 2 for loop to ask for all the questions
 print("Player 2 Turn")
 for query in questions2:
     print("\n")
@@ -164,7 +167,7 @@ for query in questions2:
     if guess == query.get_correct_answer():
         print("Correct")
         player2 = player2 + 1
-
+# comparing the scores between the 2 players
 if player1 == player2:
     print("This round was a tie")
 elif player1 > player2:

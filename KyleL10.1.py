@@ -1,3 +1,4 @@
+# class for personal data using CamelCase because thats what python wants
 class PersonalData:
     name = ' '
     address = " "
@@ -9,7 +10,7 @@ class PersonalData:
         address = " "
         age = 0.0
         phone = ' '
-
+# get functions
     def get_name(self):
         return self.name
 
@@ -21,7 +22,7 @@ class PersonalData:
 
     def get_phone(self):
         return self.phone
-
+# set functions
     def set_name(self, n):
         self.name = n
 
@@ -34,13 +35,13 @@ class PersonalData:
     def set_phone(self, p):
         self.phone = p
 
-
+# main
 def main():
-
+    # delcaring each individual
     kyle = PersonalData()
     rebecca = PersonalData()
     alex = PersonalData()
-
+# setting each individual for data bellow
     kyle.set_name("kyle")
     kyle.set_address("1234 idk drive")
     kyle.set_age(30)
@@ -53,7 +54,7 @@ def main():
     alex.set_address("9012 idwk drive")
     alex.set_age(28)
     alex.set_phone("815-758-9443")
-
+# printing everyones information
     print("name:", kyle.get_name(), "address:", kyle.get_address(), "age:", kyle.get_age(), "Phone:", kyle.get_phone(), sep=' ')
     print("name:", rebecca.get_name(), "address:", rebecca.get_address(), "age:", rebecca.get_age(), "Phone:", rebecca.get_phone(), sep=' ')
     print("name:", alex.get_name(), "address:", alex.get_address(), "age:", alex.get_age(), "Phone:", alex.get_phone(), sep=' ')
