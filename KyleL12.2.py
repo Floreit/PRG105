@@ -1,11 +1,16 @@
-def sum(n):
-    if n == 0:
+# function to do the recursion
+def get_sum(piece):
+
+    if len(piece) == 0:
         return 0
-    print(n)
-    return n + sum(n - 1)
+    else:
 
+        return piece[0] + get_sum(piece[1:])
+
+# main function
 def main():
-    sum(5)
-
-
+    numbers = [1, 2, 3, 4, 5]
+    output = get_sum(numbers)
+    print(output)
+# calling main
 main()
