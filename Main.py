@@ -27,7 +27,8 @@ def main():
         # Pathway of pain
         if primary_choice == 1:
             print(
-                "As you walk down the pathway of pain, you run into a naked man, whom is missing an arm and leg, clutching onto a bag of gold coins muttering to himself, Just a little more before i can get out \n"
+                "As you walk down the pathway of pain, you run into a naked man, whom is missing an arm and leg, \n"
+                "clutching onto a bag of gold coins muttering to himself, Just a little more before i can get out \n"
                 "You sit here staring at the dying man wondering what to do")
             choice_aa = int(input(
                 "1) Do you attack the man and take his bag of gold under the assumption that you will need this to get out?\n"
@@ -35,17 +36,33 @@ def main():
                 "3) Do you wait patently for the man to die before you take his bag of gold?\n"))
             if choice_aa == 1:
                 print(
-                    "You chose to attack the unarmed naked man with nothing but your fist, but as you approach the delirious dying man, you are confronted with a naked woman armed with a spear, its the dying mans wife,\n she realized your plan and she promptly stabs you, and returns to her dying husband, you lay on the ground bleeding to death, regretting the choices you made, not just here but in life overall")
+                    "You chose to attack the unarmed naked man with nothing but your fist, but as you approach the\n"
+                    "delirious dying man, you are confronted with a naked woman armed with a spear,\n"
+                    "its the dying mans wife,\n"
+                    "she realized your plan and she promptly stabs you, and returns to her dying husband,\n"
+                    "you lay on the ground bleeding to death, regretting the choices you made, not just here but in life\n"
+                    "overall")
                 print("Game Over")
                 condition = 0
             elif choice_aa == 2:
                 print(
-                    "You ignore the dying fool and continue down the pathway, as you look back you see a naked woman armed with a spear approaching the dying man, she kneels down and hugs him, you think to yourself that it was a good idea not to attack the dying man\n"
-                    "You continue down your path, the more time passes the more the screams get louder, you eventually come across a skeleton with a bag of gold larger than the dying man you passed up, lucky!", items.add_gold(50))
+                    "You ignore the dying fool and continue down the pathway, as you look back you see a naked woman\n"
+                    "armed with a spear approaching the dying man, she kneels down and hugs him, you think to yourself\n"
+                    "that it was a good idea not to attack the dying man\n"
+                    "You continue down your path, the more time passes the more the screams get louder,\n"
+                    "you eventually come across a skeleton with a bag of gold larger than the dying man you passed up,\n"
+                    "lucky!", items.add_gold(50))
                 # Insert new if statement for one more path involving combat
 
             elif choice_aa == 3:
-                print("You decide to wait for the man to die first before stealing his gold, but while waiting you see a naked woman with a spear approaching, she spots you, stares at you for a moment before charging at you full speed, spear readied, you turn 180 and run as fast as you can but all those years of eating hamburgers and doughnuts are finally starting to catch up to you, speaking of that, you feel a burning sensation in your lower abdomen, her spear has pierced through you, as she pulls the spear out you can hear her berate you for trying to harm her husband. ")
+                print(
+                    "You decide to wait for the man to die first before stealing his gold, but while waiting you see a\n"
+                    "naked woman with a spear approaching, she spots you, stares at you for a moment before charging at\n"
+                    "you full speed, spear readied, you turn 180 and run as fast as you can but all those years of\n"
+                    "eating hamburgers and doughnuts are finally starting to catch up to you, speaking of that,\n"
+                    "you feel a burning sensation in your lower abdomen,\n"
+                    "her spear has pierced through you, as she pulls the spear out you can hear her berate you for trying\n"
+                    "to harm her husband. ")
                 print("Game over")
                 condition = 1
             else:
