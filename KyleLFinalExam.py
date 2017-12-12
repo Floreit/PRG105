@@ -64,10 +64,7 @@ def combat(sword, shield):
     if shield == 1:
         temp_holder.insert(1, 2)
 
-    random_result = temp_holder[0] + temp_holder[1]
-    for num in temp_holder:
-        random_result += num
-    random_result = random_result + result
+    random_result = temp_holder[0] + temp_holder[1] + result
     return random_result
 
 # main function where all the magic happens
